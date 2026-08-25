@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TidyShop - Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        h1 { margin: 0; }
+        h2 { margin-top: 2.5rem; }
+        h3 { margin-top: 1.75rem; font-size: 1.05rem; }
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        .meta { color: #666; font-size: 0.9rem; }
+        ul { padding-left: 1.25rem; }
+        li { margin-bottom: 0.4rem; }
+        footer {
+            border-top: 1px solid #eee;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        a { color: #1aa971; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TidyShop Privacy Policy</h1>
+        <p class="meta">Last updated: 26 August 2026</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 style="margin-top:0">In short</h2>
+            <p>TidyShop is a shopping list app that keeps your data on your own device. There is no TidyShop
+            account, no TidyShop server, and no analytics, advertising, or tracking of any kind. The developer
+            neither receives nor stores your lists, your profile, or your usage.</p>
+            <p>Some optional features do send data off your device &mdash; always to a service <em>you</em> choose
+            and control, such as your own Google Drive or your own self-hosted server. Those are described below.</p>
+        </section>
+
+        <h2>Who is responsible</h2>
+        <p>TidyShop is developed and published by <strong>jimz011</strong>, an independent developer.
+        For any privacy question or request, contact
+        <a href="mailto:jimz011apps@gmail.com">jimz011apps@gmail.com</a>.</p>
+
+        <h2>What TidyShop stores on your device</h2>
+        <p>The following is saved in the app's private storage on your phone. It is not transmitted anywhere
+        unless you turn on one of the optional features described in the next section.</p>
+        <ul>
+            <li><strong>Your profile</strong> &mdash; the display name you enter, and an email address if you
+            choose to add one.</li>
+            <li><strong>Your shopping lists</strong> &mdash; list names, items, quantities, notes, categories,
+            store selections, and their timestamps.</li>
+            <li><strong>Household and family setup</strong> &mdash; member names, roles, permissions, and
+            invitation codes, if you use the family features.</li>
+            <li><strong>App lock credentials</strong> &mdash; if you set an app-lock PIN or password, only a
+            salted PBKDF2-HMAC-SHA256 hash of it is stored. The PIN or password itself is never saved.</li>
+            <li><strong>A device key</strong> &mdash; a keypair generated in the Android Keystore, used to
+            identify this device to your own server when you pair one. The private key never leaves the device.</li>
+            <li><strong>App settings</strong> &mdash; theme, font size, lock timeout, and similar preferences.</li>
+        </ul>
+        <p>Uninstalling TidyShop deletes all of it.</p>
+
+        <h2>Optional features that send data off your device</h2>
+        <p>Every item below is off by default and only starts when you enable it.</p>
+
+        <h3>Backup to your own Google Drive</h3>
+        <p>If you enable Drive backup, TidyShop asks Google for the <code>drive.appdata</code> authorisation
+        scope and writes a backup file to the hidden application-data folder of <em>your</em> Google Drive
+        account. That scope grants access to nothing else in your Drive, the file is not visible in your normal
+        Drive file list, and the developer has no access to it or to your Google account. Google's handling of
+        your Drive data is governed by the
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can delete backups from
+        within TidyShop, and you can revoke the app's access at any time in your Google account settings.</p>
+
+        <h3>Sync with your own TidyShop connector</h3>
+        <p>TidyShop can sync lists, household members, invitations, and backups with a TidyShop connector server
+        that <strong>you</strong> host. You supply the server address, and data is sent only to that address over
+        HTTPS. The developer does not operate this server, does not know its address, and cannot read anything
+        stored on it. You are responsible for that server and for the data on it.</p>
+
+        <h3>Single sign-on with your own identity provider</h3>
+        <p>Optionally, you can sign in through an OpenID Connect provider that you configure yourself &mdash; for
+        example a self-hosted Authentik instance, or another provider you already use. Your credentials are
+        entered on that provider's own page, not in TidyShop, and TidyShop stores only the resulting tokens on
+        the device. That provider's privacy policy applies to the sign-in itself.</p>
+
+        <h3>Gravatar profile pictures</h3>
+        <p>If you choose Gravatar as your profile picture, TidyShop requests an image from
+        <a href="https://automattic.com/privacy/">Gravatar</a>. The request contains a one-way SHA-256 hash of
+        your email address (the address itself is not sent), your display name so Gravatar can draw initials if
+        you have no Gravatar account, and, as with any web request, your IP address. Choosing any other avatar
+        option means no request is made at all. Downloaded images are cached on your device.</p>
+
+        <h3>Support links</h3>
+        <p>The Support screen contains links to Buy Me a Coffee and PayPal. Nothing is sent when you simply view
+        that screen; tapping a link opens the site in your browser, where that company's own privacy policy
+        applies. Payments, if you make one, are handled entirely by them &mdash; TidyShop never sees payment
+        details, and tips do not unlock features.</p>
+
+        <h2>What the developer receives</h2>
+        <p>Nothing automatically. There is no telemetry, no crash reporting service, no advertising identifier,
+        and no third-party analytics SDK in the app. The only way the developer learns anything about you is if
+        you send an email &mdash; in which case the developer sees your address and whatever you write, and uses
+        it solely to answer you. Please remove passwords, tokens, and pairing keys from anything you send.</p>
+
+        <h2>Permissions</h2>
+        <ul>
+            <li><strong>Internet</strong> &mdash; used only by the optional features above. With all of them off,
+            TidyShop makes no network requests.</li>
+            <li><strong>Biometrics</strong> &mdash; used only to unlock the app if you turn on biometric lock. The
+            check is performed by Android; TidyShop never sees or stores your fingerprint or face data.</li>
+        </ul>
+        <p>TidyShop requests no camera, contacts, location, storage, or microphone permission. Family invites are
+        shared as links and QR codes that you scan with your phone's own camera app.</p>
+
+        <h2>Children</h2>
+        <p>TidyShop is a general-audience utility and is not directed at children under 13. It does not knowingly
+        collect any personal information from children.</p>
+
+        <h2>Keeping and deleting your data</h2>
+        <ul>
+            <li>Data on your device stays until you delete it in the app or uninstall TidyShop.</li>
+            <li>Drive backups stay in your Drive until you delete them, from the app or from your Google account.</li>
+            <li>Data on a connector server you host stays until you delete it there.</li>
+        </ul>
+        <p>Because the developer holds no copy of your data, there is nothing for the developer to delete on your
+        behalf. If you have a question about exercising your rights under the GDPR or a similar law, write to the
+        address below and it will be answered.</p>
+
+        <h2>Security</h2>
+        <p>App-lock PINs and passwords are stored only as salted PBKDF2-HMAC-SHA256 hashes with 150,000
+        iterations. The device keypair is generated and held in the Android Keystore. All network requests made
+        by the optional features use HTTPS. No method of storage or transmission is perfectly secure, but data
+        that never leaves your device is not exposed by a breach of anyone else's systems.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If the app's data handling changes, this page is updated and the date at the top changes with it.
+        Significant changes will also be noted in the app's release notes.</p>
+
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:jimz011apps@gmail.com">jimz011apps@gmail.com</a></p>
+    </main>
+
+    <footer>
+        <p>TidyShop &mdash; developed by <a href="https://jimz011.github.io/">jimz011</a>.</p>
+    </footer>
+</body>
+</html>
